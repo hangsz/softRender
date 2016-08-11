@@ -80,21 +80,20 @@ void Render::vertexShader(){
 	
 	world.world();	
 
-	Point eye(0.0, 0.0, 3.0, 1.0f);
+	Point eye(0.0, 0.0, 2.0, 1.0f);
 	Point at(0.0, 0.0, 0.0, 1.0f);
 	Vector up(0.0, 1.0f, 0.0);
 	view.view(eye, at, up);
 
 	perspective.perspective(90.0f, 1.0f, -1.0f, -500.0f);
 
-	screen.screen(320, 320);
+	screen.screen(320, 320);	
 
-	CT = perspective*view*world;
+	CT = screen * perspective* view * world;
 
-	Point p(1, 1, 1, 1);
-	CT*p;
-	//for (int i = 0; i < nv_; ++i)  
-	//	CT * ( *vertexBuffer_[i].point() );
+	
+	for (int i = 0; i < nv_; ++i)  
+		CT * ( *vertexBuffer_[i].point() );
 
 	primitive();
 }
@@ -218,7 +217,7 @@ void Render::colorXY(int y, int x, const Vertex* vXY, int mode = 0){
 
 	if ( 0 == mode ){
 		if (vXY->point()->z() / vXY->point()->w() < zBuffer_[y][x])
-			frameBuffer_[y][x] = static_cast<int>((vXY->color()->B * 255.0f)) << 25 |
+			frameBuffer_[y][x] = static_cast<int>((vXY->color()->B * 255.0f)) << 24 |
 			                     static_cast<int>((vXY->color()->G * 255.0f)) << 16 |
 			                     static_cast<int>((vXY->color()->R * 255.0f)) << 8;
 	}

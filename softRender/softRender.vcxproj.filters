@@ -24,12 +24,6 @@
     <ClInclude Include="vector.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="matrix.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="transform.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="vertex.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -39,18 +33,15 @@
     <ClInclude Include="..\..\imageProcess\Lib\Bitmap.h">
       <Filter>Lib</Filter>
     </ClInclude>
+    <ClInclude Include="transform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="vector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="point.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="matrix.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="transform.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="vertex.cpp">
@@ -64,6 +55,9 @@
     </ClCompile>
     <ClCompile Include="..\..\imageProcess\Lib\Bitmap.cpp">
       <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="transform.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

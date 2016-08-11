@@ -83,20 +83,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\imageProcess\Lib\Bitmap.h" />
-    <ClInclude Include="matrix.h" />
+    <ClInclude Include="transform.h" />
     <ClInclude Include="point.h" />
     <ClInclude Include="render.h" />
-    <ClInclude Include="transform.h" />
     <ClInclude Include="vector.h" />
     <ClInclude Include="vertex.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\imageProcess\Lib\Bitmap.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="matrix.cpp" />
+    <ClCompile Include="transform.cpp" />
     <ClCompile Include="point.cpp" />
     <ClCompile Include="render.cpp" />
-    <ClCompile Include="transform.cpp" />
     <ClCompile Include="vector.cpp" />
     <ClCompile Include="vertex.cpp" />
   </ItemGroup>
