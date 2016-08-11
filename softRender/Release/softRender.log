@@ -1,0 +1,6 @@
+﻿  render.cpp
+render.cpp(224): warning C4244: “初始化”: 从“const float”转换到“int”，可能丢失数据
+render.cpp(225): warning C4244: “初始化”: 从“const float”转换到“int”，可能丢失数据
+  正在生成代码
+  已完成代码的生成
+  softRender.vcxproj -> d:\Users\HANG\Documents\Visual Studio\Projects\softRender\Release\softRender.exe
